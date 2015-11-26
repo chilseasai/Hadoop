@@ -1,0 +1,479 @@
+WARN main org.apache.sqoop.tool.SqoopTool - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+ DEBUG main org.apache.sqoop.SqoopOptions - Generated nonce dir: \tmp\sqoop-tseg\compile\7cfecfce1a613f294a1a55d6e9d34439
+ INFO main org.apache.sqoop.Sqoop - Running Sqoop version: 1.4.5
+ WARN main org.apache.sqoop.tool.BaseSqoopTool - Setting your password on the command-line is insecure. Consider using -P instead.
+ WARN main org.apache.sqoop.ConnFactory - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+ DEBUG main org.apache.sqoop.ConnFactory - Loaded manager factory: org.apache.sqoop.manager.oracle.OraOopManagerFactory
+ DEBUG main org.apache.sqoop.ConnFactory - Loaded manager factory: com.cloudera.sqoop.manager.DefaultManagerFactory
+ DEBUG main org.apache.sqoop.ConnFactory - Trying ManagerFactory: org.apache.sqoop.manager.oracle.OraOopManagerFactory
+ DEBUG main org.apache.sqoop.manager.oracle.OraOopManagerFactory - Data Connector for Oracle and Hadoop can be called by Sqoop!
+ DEBUG main org.apache.sqoop.ConnFactory - Trying ManagerFactory: com.cloudera.sqoop.manager.DefaultManagerFactory
+ DEBUG main org.apache.sqoop.manager.DefaultManagerFactory - Trying with scheme: jdbc:mysql:
+ INFO main org.apache.sqoop.manager.MySQLManager - Preparing to use a MySQL streaming resultset.
+ DEBUG main org.apache.sqoop.ConnFactory - Instantiated ConnManager org.apache.sqoop.manager.MySQLManager@d9fc12
+ INFO main org.apache.sqoop.tool.CodeGenTool - Beginning code generation
+ DEBUG main org.apache.sqoop.manager.SqlManager - Execute getColumnInfoRawQuery : SELECT t.* FROM `popedom_info` AS t LIMIT 1
+ DEBUG main org.apache.sqoop.manager.SqlManager - No connection paramenters specified. Using regular API for making connection.
+ DEBUG main org.apache.sqoop.manager.SqlManager - Using fetchSize for next query: -2147483648
+ INFO main org.apache.sqoop.manager.SqlManager - Executing SQL statement: SELECT t.* FROM `popedom_info` AS t LIMIT 1
+ DEBUG main org.apache.sqoop.orm.ClassWriter - selected columns:
+ DEBUG main org.apache.sqoop.orm.ClassWriter -   popedom_id
+ DEBUG main org.apache.sqoop.orm.ClassWriter -   popedom_name
+ DEBUG main org.apache.sqoop.orm.ClassWriter -   popedom_value
+ DEBUG main org.apache.sqoop.orm.ClassWriter -   category_id
+ DEBUG main org.apache.sqoop.orm.ClassWriter -   create_time
+ DEBUG main org.apache.sqoop.manager.SqlManager - Using fetchSize for next query: -2147483648
+ INFO main org.apache.sqoop.manager.SqlManager - Executing SQL statement: SELECT t.* FROM `popedom_info` AS t LIMIT 1
+ DEBUG main org.apache.sqoop.orm.ClassWriter - Writing source file: \tmp\sqoop-tseg\compile\7cfecfce1a613f294a1a55d6e9d34439\popedom_info.java
+ DEBUG main org.apache.sqoop.orm.ClassWriter - Table name: popedom_info
+ DEBUG main org.apache.sqoop.orm.ClassWriter - Columns: popedom_id:4, popedom_name:12, popedom_value:12, category_id:4, create_time:12, 
+ DEBUG main org.apache.sqoop.orm.ClassWriter - sourceFilename is popedom_info.java
+ DEBUG main org.apache.sqoop.orm.CompilationManager - Found existing \tmp\sqoop-tseg\compile\7cfecfce1a613f294a1a55d6e9d34439\
+ INFO main org.apache.sqoop.orm.CompilationManager - $HADOOP_MAPRED_HOME is not set
+ DEBUG main org.apache.sqoop.orm.CompilationManager - Current sqoop classpath = D:\workspace2\mysqoop\target\classes;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-client\2.6.0\hadoop-client-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-common\2.6.0\hadoop-common-2.6.0.jar;C:\Users\saisai\.m2\repository\com\google\guava\guava\11.0.2\guava-11.0.2.jar;C:\Users\saisai\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar;C:\Users\saisai\.m2\repository\org\apache\commons\commons-math3\3.1.1\commons-math3-3.1.1.jar;C:\Users\saisai\.m2\repository\xmlenc\xmlenc\0.52\xmlenc-0.52.jar;C:\Users\saisai\.m2\repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;C:\Users\saisai\.m2\repository\commons-codec\commons-codec\1.4\commons-codec-1.4.jar;C:\Users\saisai\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\saisai\.m2\repository\commons-net\commons-net\3.1\commons-net-3.1.jar;C:\Users\saisai\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\saisai\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;C:\Users\saisai\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\saisai\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\saisai\.m2\repository\commons-configuration\commons-configuration\1.6\commons-configuration-1.6.jar;C:\Users\saisai\.m2\repository\commons-digester\commons-digester\1.8\commons-digester-1.8.jar;C:\Users\saisai\.m2\repository\commons-beanutils\commons-beanutils\1.7.0\commons-beanutils-1.7.0.jar;C:\Users\saisai\.m2\repository\commons-beanutils\commons-beanutils-core\1.8.0\commons-beanutils-core-1.8.0.jar;C:\Users\saisai\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;C:\Users\saisai\.m2\repository\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar;C:\Users\saisai\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.9.13\jackson-core-asl-1.9.13.jar;C:\Users\saisai\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.9.13\jackson-mapper-asl-1.9.13.jar;C:\Users\saisai\.m2\repository\org\apache\avro\avro\1.7.4\avro-1.7.4.jar;C:\Users\saisai\.m2\repository\com\thoughtworks\paranamer\paranamer\2.3\paranamer-2.3.jar;C:\Users\saisai\.m2\repository\org\xerial\snappy\snappy-java\1.0.4.1\snappy-java-1.0.4.1.jar;C:\Users\saisai\.m2\repository\com\google\protobuf\protobuf-java\2.5.0\protobuf-java-2.5.0.jar;C:\Users\saisai\.m2\repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-auth\2.6.0\hadoop-auth-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\httpcomponents\httpclient\4.2.5\httpclient-4.2.5.jar;C:\Users\saisai\.m2\repository\org\apache\httpcomponents\httpcore\4.2.4\httpcore-4.2.4.jar;C:\Users\saisai\.m2\repository\org\apache\directory\server\apacheds-kerberos-codec\2.0.0-M15\apacheds-kerberos-codec-2.0.0-M15.jar;C:\Users\saisai\.m2\repository\org\apache\directory\server\apacheds-i18n\2.0.0-M15\apacheds-i18n-2.0.0-M15.jar;C:\Users\saisai\.m2\repository\org\apache\directory\api\api-asn1-api\1.0.0-M20\api-asn1-api-1.0.0-M20.jar;C:\Users\saisai\.m2\repository\org\apache\directory\api\api-util\1.0.0-M20\api-util-1.0.0-M20.jar;C:\Users\saisai\.m2\repository\org\apache\curator\curator-framework\2.6.0\curator-framework-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\curator\curator-client\2.6.0\curator-client-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\curator\curator-recipes\2.6.0\curator-recipes-2.6.0.jar;C:\Users\saisai\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\saisai\.m2\repository\org\htrace\htrace-core\3.0.4\htrace-core-3.0.4.jar;C:\Users\saisai\.m2\repository\org\apache\zookeeper\zookeeper\3.4.6\zookeeper-3.4.6.jar;C:\Users\saisai\.m2\repository\org\apache\commons\commons-compress\1.4.1\commons-compress-1.4.1.jar;C:\Users\saisai\.m2\repository\org\tukaani\xz\1.0\xz-1.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-hdfs\2.6.0\hadoop-hdfs-2.6.0.jar;C:\Users\saisai\.m2\repository\org\mortbay\jetty\jetty-util\6.1.26\jetty-util-6.1.26.jar;C:\Users\saisai\.m2\repository\io\netty\netty\3.6.2.Final\netty-3.6.2.Final.jar;C:\Users\saisai\.m2\repository\xerces\xercesImpl\2.9.1\xercesImpl-2.9.1.jar;C:\Users\saisai\.m2\repository\xml-apis\xml-apis\1.3.04\xml-apis-1.3.04.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-app\2.6.0\hadoop-mapreduce-client-app-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-common\2.6.0\hadoop-mapreduce-client-common-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-yarn-client\2.6.0\hadoop-yarn-client-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-yarn-server-common\2.6.0\hadoop-yarn-server-common-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-shuffle\2.6.0\hadoop-mapreduce-client-shuffle-2.6.0.jar;C:\Users\saisai\.m2\repository\org\fusesource\leveldbjni\leveldbjni-all\1.8\leveldbjni-all-1.8.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-yarn-api\2.6.0\hadoop-yarn-api-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-core\2.6.0\hadoop-mapreduce-client-core-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-yarn-common\2.6.0\hadoop-yarn-common-2.6.0.jar;C:\Users\saisai\.m2\repository\javax\xml\bind\jaxb-api\2.2.2\jaxb-api-2.2.2.jar;C:\Users\saisai\.m2\repository\javax\xml\stream\stax-api\1.0-2\stax-api-1.0-2.jar;C:\Users\saisai\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\saisai\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;C:\Users\saisai\.m2\repository\com\sun\jersey\jersey-core\1.9\jersey-core-1.9.jar;C:\Users\saisai\.m2\repository\com\sun\jersey\jersey-client\1.9\jersey-client-1.9.jar;C:\Users\saisai\.m2\repository\org\codehaus\jackson\jackson-jaxrs\1.9.13\jackson-jaxrs-1.9.13.jar;C:\Users\saisai\.m2\repository\org\codehaus\jackson\jackson-xc\1.9.13\jackson-xc-1.9.13.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-jobclient\2.6.0\hadoop-mapreduce-client-jobclient-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-annotations\2.6.0\hadoop-annotations-2.6.0.jar;C:\Users\saisai\.m2\repository\mysql\mysql-connector-java\5.1.35\mysql-connector-java-5.1.35.jar;C:\Users\saisai\.m2\repository\org\apache\sqoop\sqoop\1.4.5\sqoop-1.4.5.jar
+ DEBUG main org.apache.sqoop.orm.CompilationManager - Adding source file: \tmp\sqoop-tseg\compile\7cfecfce1a613f294a1a55d6e9d34439\popedom_info.java
+ DEBUG main org.apache.sqoop.orm.CompilationManager - Invoking javac with args:
+ DEBUG main org.apache.sqoop.orm.CompilationManager -   -sourcepath
+ DEBUG main org.apache.sqoop.orm.CompilationManager -   \tmp\sqoop-tseg\compile\7cfecfce1a613f294a1a55d6e9d34439\
+ DEBUG main org.apache.sqoop.orm.CompilationManager -   -d
+ DEBUG main org.apache.sqoop.orm.CompilationManager -   \tmp\sqoop-tseg\compile\7cfecfce1a613f294a1a55d6e9d34439\
+ DEBUG main org.apache.sqoop.orm.CompilationManager -   -classpath
+ DEBUG main org.apache.sqoop.orm.CompilationManager -   D:\workspace2\mysqoop\target\classes;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-client\2.6.0\hadoop-client-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-common\2.6.0\hadoop-common-2.6.0.jar;C:\Users\saisai\.m2\repository\com\google\guava\guava\11.0.2\guava-11.0.2.jar;C:\Users\saisai\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar;C:\Users\saisai\.m2\repository\org\apache\commons\commons-math3\3.1.1\commons-math3-3.1.1.jar;C:\Users\saisai\.m2\repository\xmlenc\xmlenc\0.52\xmlenc-0.52.jar;C:\Users\saisai\.m2\repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;C:\Users\saisai\.m2\repository\commons-codec\commons-codec\1.4\commons-codec-1.4.jar;C:\Users\saisai\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\saisai\.m2\repository\commons-net\commons-net\3.1\commons-net-3.1.jar;C:\Users\saisai\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\saisai\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;C:\Users\saisai\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\saisai\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\saisai\.m2\repository\commons-configuration\commons-configuration\1.6\commons-configuration-1.6.jar;C:\Users\saisai\.m2\repository\commons-digester\commons-digester\1.8\commons-digester-1.8.jar;C:\Users\saisai\.m2\repository\commons-beanutils\commons-beanutils\1.7.0\commons-beanutils-1.7.0.jar;C:\Users\saisai\.m2\repository\commons-beanutils\commons-beanutils-core\1.8.0\commons-beanutils-core-1.8.0.jar;C:\Users\saisai\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;C:\Users\saisai\.m2\repository\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar;C:\Users\saisai\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.9.13\jackson-core-asl-1.9.13.jar;C:\Users\saisai\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.9.13\jackson-mapper-asl-1.9.13.jar;C:\Users\saisai\.m2\repository\org\apache\avro\avro\1.7.4\avro-1.7.4.jar;C:\Users\saisai\.m2\repository\com\thoughtworks\paranamer\paranamer\2.3\paranamer-2.3.jar;C:\Users\saisai\.m2\repository\org\xerial\snappy\snappy-java\1.0.4.1\snappy-java-1.0.4.1.jar;C:\Users\saisai\.m2\repository\com\google\protobuf\protobuf-java\2.5.0\protobuf-java-2.5.0.jar;C:\Users\saisai\.m2\repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-auth\2.6.0\hadoop-auth-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\httpcomponents\httpclient\4.2.5\httpclient-4.2.5.jar;C:\Users\saisai\.m2\repository\org\apache\httpcomponents\httpcore\4.2.4\httpcore-4.2.4.jar;C:\Users\saisai\.m2\repository\org\apache\directory\server\apacheds-kerberos-codec\2.0.0-M15\apacheds-kerberos-codec-2.0.0-M15.jar;C:\Users\saisai\.m2\repository\org\apache\directory\server\apacheds-i18n\2.0.0-M15\apacheds-i18n-2.0.0-M15.jar;C:\Users\saisai\.m2\repository\org\apache\directory\api\api-asn1-api\1.0.0-M20\api-asn1-api-1.0.0-M20.jar;C:\Users\saisai\.m2\repository\org\apache\directory\api\api-util\1.0.0-M20\api-util-1.0.0-M20.jar;C:\Users\saisai\.m2\repository\org\apache\curator\curator-framework\2.6.0\curator-framework-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\curator\curator-client\2.6.0\curator-client-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\curator\curator-recipes\2.6.0\curator-recipes-2.6.0.jar;C:\Users\saisai\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\saisai\.m2\repository\org\htrace\htrace-core\3.0.4\htrace-core-3.0.4.jar;C:\Users\saisai\.m2\repository\org\apache\zookeeper\zookeeper\3.4.6\zookeeper-3.4.6.jar;C:\Users\saisai\.m2\repository\org\apache\commons\commons-compress\1.4.1\commons-compress-1.4.1.jar;C:\Users\saisai\.m2\repository\org\tukaani\xz\1.0\xz-1.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-hdfs\2.6.0\hadoop-hdfs-2.6.0.jar;C:\Users\saisai\.m2\repository\org\mortbay\jetty\jetty-util\6.1.26\jetty-util-6.1.26.jar;C:\Users\saisai\.m2\repository\io\netty\netty\3.6.2.Final\netty-3.6.2.Final.jar;C:\Users\saisai\.m2\repository\xerces\xercesImpl\2.9.1\xercesImpl-2.9.1.jar;C:\Users\saisai\.m2\repository\xml-apis\xml-apis\1.3.04\xml-apis-1.3.04.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-app\2.6.0\hadoop-mapreduce-client-app-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-common\2.6.0\hadoop-mapreduce-client-common-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-yarn-client\2.6.0\hadoop-yarn-client-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-yarn-server-common\2.6.0\hadoop-yarn-server-common-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-shuffle\2.6.0\hadoop-mapreduce-client-shuffle-2.6.0.jar;C:\Users\saisai\.m2\repository\org\fusesource\leveldbjni\leveldbjni-all\1.8\leveldbjni-all-1.8.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-yarn-api\2.6.0\hadoop-yarn-api-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-core\2.6.0\hadoop-mapreduce-client-core-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-yarn-common\2.6.0\hadoop-yarn-common-2.6.0.jar;C:\Users\saisai\.m2\repository\javax\xml\bind\jaxb-api\2.2.2\jaxb-api-2.2.2.jar;C:\Users\saisai\.m2\repository\javax\xml\stream\stax-api\1.0-2\stax-api-1.0-2.jar;C:\Users\saisai\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\saisai\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;C:\Users\saisai\.m2\repository\com\sun\jersey\jersey-core\1.9\jersey-core-1.9.jar;C:\Users\saisai\.m2\repository\com\sun\jersey\jersey-client\1.9\jersey-client-1.9.jar;C:\Users\saisai\.m2\repository\org\codehaus\jackson\jackson-jaxrs\1.9.13\jackson-jaxrs-1.9.13.jar;C:\Users\saisai\.m2\repository\org\codehaus\jackson\jackson-xc\1.9.13\jackson-xc-1.9.13.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-jobclient\2.6.0\hadoop-mapreduce-client-jobclient-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-annotations\2.6.0\hadoop-annotations-2.6.0.jar;C:\Users\saisai\.m2\repository\mysql\mysql-connector-java\5.1.35\mysql-connector-java-5.1.35.jar;C:\Users\saisai\.m2\repository\org\apache\sqoop\sqoop\1.4.5\sqoop-1.4.5.jar;/C:/Users/saisai/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.6.0/hadoop-mapreduce-client-core-2.6.0.jar;/C:/Users/saisai/.m2/repository/org/apache/sqoop/sqoop/1.4.5/sqoop-1.4.5.jar
+ INFO main org.apache.sqoop.orm.CompilationManager - Writing jar file: \tmp\sqoop-tseg\compile\7cfecfce1a613f294a1a55d6e9d34439\popedom_info.jar
+ DEBUG main org.apache.sqoop.orm.CompilationManager - Scanning for .class files in directory: \tmp\sqoop-tseg\compile\7cfecfce1a613f294a1a55d6e9d34439
+ DEBUG main org.apache.sqoop.orm.CompilationManager - Got classfile: \tmp\sqoop-tseg\compile\7cfecfce1a613f294a1a55d6e9d34439\popedom_info.class -> popedom_info.class
+ DEBUG main org.apache.sqoop.orm.CompilationManager - Finished writing jar file \tmp\sqoop-tseg\compile\7cfecfce1a613f294a1a55d6e9d34439\popedom_info.jar
+ WARN main org.apache.sqoop.manager.MySQLManager - It looks like you are importing from mysql.
+ WARN main org.apache.sqoop.manager.MySQLManager - This transfer can be faster! Use the --direct
+ WARN main org.apache.sqoop.manager.MySQLManager - option to exercise a MySQL-specific fast path.
+ INFO main org.apache.sqoop.manager.MySQLManager - Setting zero DATETIME behavior to convertToNull (mysql)
+ DEBUG main org.apache.sqoop.manager.MySQLManager - Rewriting connect string to jdbc:mysql://tseg0:3306/bcpdm_web?zeroDateTimeBehavior=convertToNull
+ DEBUG main org.apache.sqoop.manager.CatalogQueryManager - Retrieving primary key for table 'popedom_info' with query SELECT column_name FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = (SELECT SCHEMA()) AND TABLE_NAME = 'popedom_info' AND COLUMN_KEY = 'PRI'
+ DEBUG main org.apache.sqoop.manager.CatalogQueryManager - Retrieving primary key for table 'popedom_info' with query SELECT column_name FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = (SELECT SCHEMA()) AND TABLE_NAME = 'popedom_info' AND COLUMN_KEY = 'PRI'
+ INFO main org.apache.sqoop.mapreduce.ImportJobBase - Beginning import of popedom_info
+ DEBUG main org.apache.sqoop.util.ClassLoaderStack - Checking for existing class: popedom_info
+ DEBUG main org.apache.sqoop.util.ClassLoaderStack - Attempting to load jar through URL: jar:file:/D:/tmp/sqoop-tseg/compile/7cfecfce1a613f294a1a55d6e9d34439/popedom_info.jar!/
+ DEBUG main org.apache.sqoop.util.ClassLoaderStack - Previous classloader is sun.misc.Launcher$AppClassLoader@164dbd5
+ DEBUG main org.apache.sqoop.util.ClassLoaderStack - Testing class in jar: popedom_info
+ DEBUG main org.apache.sqoop.util.ClassLoaderStack - Loaded jar into current JVM: jar:file:/D:/tmp/sqoop-tseg/compile/7cfecfce1a613f294a1a55d6e9d34439/popedom_info.jar!/
+ DEBUG main org.apache.sqoop.util.ClassLoaderStack - Added classloader for jar \tmp\sqoop-tseg\compile\7cfecfce1a613f294a1a55d6e9d34439\popedom_info.jar: java.net.FactoryURLClassLoader@18f17eb
+ DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(value=[Rate of successful kerberos logins and latency (milliseconds)], about=, valueName=Time, type=DEFAULT, always=false, sampleName=Ops)
+ DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(value=[Rate of failed kerberos logins and latency (milliseconds)], about=, valueName=Time, type=DEFAULT, always=false, sampleName=Ops)
+ DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(value=[GetGroups], about=, valueName=Time, type=DEFAULT, always=false, sampleName=Ops)
+ DEBUG main org.apache.hadoop.metrics2.impl.MetricsSystemImpl - UgiMetrics, User and group related metrics
+ DEBUG main org.apache.hadoop.security.authentication.util.KerberosName - Kerberos krb5 configuration not found, setting default realm to empty
+ DEBUG main org.apache.hadoop.security.Groups -  Creating new Groups object
+ DEBUG main org.apache.hadoop.util.NativeCodeLoader - Trying to load the custom-built native-hadoop library...
+ DEBUG main org.apache.hadoop.util.NativeCodeLoader - Loaded the native-hadoop library
+ DEBUG main org.apache.hadoop.security.JniBasedUnixGroupsMapping - Using JniBasedUnixGroupsMapping for Group resolution
+ DEBUG main org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback - Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMapping
+ DEBUG main org.apache.hadoop.security.Groups - Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - hadoop login
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - hadoop login commit
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - using local user:NTUserPrincipal: tseg
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - Using user: "NTUserPrincipal: tseg" with name tseg
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - User entry: "tseg"
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - UGI loginUser:tseg (auth:SIMPLE)
+ INFO main org.apache.hadoop.conf.Configuration.deprecation - mapred.jar is deprecated. Instead, use mapreduce.job.jar
+ DEBUG main org.apache.sqoop.mapreduce.db.DBConfiguration - Securing password into job credentials store
+ DEBUG main org.apache.sqoop.mapreduce.DataDrivenImportJob - Using table class: popedom_info
+ DEBUG main org.apache.sqoop.mapreduce.DataDrivenImportJob - Using InputFormat: class com.cloudera.sqoop.mapreduce.db.DataDrivenDBInputFormat
+ DEBUG main org.apache.hadoop.hdfs.BlockReaderLocal - dfs.client.use.legacy.blockreader.local = false
+ DEBUG main org.apache.hadoop.hdfs.BlockReaderLocal - dfs.client.read.shortcircuit = false
+ DEBUG main org.apache.hadoop.hdfs.BlockReaderLocal - dfs.client.domain.socket.data.traffic = false
+ DEBUG main org.apache.hadoop.hdfs.BlockReaderLocal - dfs.domain.socket.path = 
+ DEBUG main org.apache.hadoop.hdfs.DFSClient - No KeyProvider found.
+ DEBUG main org.apache.hadoop.io.retry.RetryUtils - multipleLinearRandomRetry = null
+ DEBUG main org.apache.hadoop.ipc.Server - rpcKind=RPC_PROTOCOL_BUFFER, rpcRequestWrapperClass=class org.apache.hadoop.ipc.ProtobufRpcEngine$RpcRequestWrapper, rpcInvoker=org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker@c0d5af
+ DEBUG main org.apache.hadoop.ipc.Client - getting client out of cache: org.apache.hadoop.ipc.Client@15e8fe2
+ DEBUG main org.apache.hadoop.util.PerformanceAdvisory - Both short-circuit local reads and UNIX domain socket are disabled.
+ DEBUG main org.apache.hadoop.hdfs.protocol.datatransfer.sasl.DataTransferSaslUtil - DataTransferProtocol not using SaslPropertiesResolver, no QOP found in configuration for dfs.data.transfer.protection
+ INFO main org.apache.hadoop.conf.Configuration.deprecation - mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+ DEBUG main org.apache.sqoop.mapreduce.JobBase - Adding to job classpath: file:/C:/Users/saisai/.m2/repository/org/apache/sqoop/sqoop/1.4.5/sqoop-1.4.5.jar
+ DEBUG main org.apache.sqoop.mapreduce.JobBase - Adding to job classpath: file:/C:/Users/saisai/.m2/repository/mysql/mysql-connector-java/5.1.35/mysql-connector-java-5.1.35.jar
+ DEBUG main org.apache.sqoop.mapreduce.JobBase - Adding to job classpath: file:/C:/Users/saisai/.m2/repository/org/apache/sqoop/sqoop/1.4.5/sqoop-1.4.5.jar
+ DEBUG main org.apache.sqoop.mapreduce.JobBase - Adding to job classpath: file:/C:/Users/saisai/.m2/repository/org/apache/sqoop/sqoop/1.4.5/sqoop-1.4.5.jar
+ WARN main org.apache.sqoop.mapreduce.JobBase - SQOOP_HOME is unset. May not be able to find all job dependencies.
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - PrivilegedAction as:tseg (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.connect(Job.java:1261)
+ DEBUG main org.apache.hadoop.mapreduce.Cluster - Trying ClientProtocolProvider : org.apache.hadoop.mapred.LocalClientProtocolProvider
+ DEBUG main org.apache.hadoop.mapreduce.Cluster - Cannot pick org.apache.hadoop.mapred.LocalClientProtocolProvider as the ClientProtocolProvider - returned null protocol
+ DEBUG main org.apache.hadoop.mapreduce.Cluster - Trying ClientProtocolProvider : org.apache.hadoop.mapred.YarnClientProtocolProvider
+ DEBUG main org.apache.hadoop.service.AbstractService - Service: org.apache.hadoop.mapred.ResourceMgrDelegate entered state INITED
+ DEBUG main org.apache.hadoop.service.AbstractService - Service: org.apache.hadoop.yarn.client.api.impl.YarnClientImpl entered state INITED
+ INFO main org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at tseg0/10.103.240.17:8032
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - PrivilegedAction as:tseg (auth:SIMPLE) from:org.apache.hadoop.yarn.client.RMProxy.getProxy(RMProxy.java:136)
+ DEBUG main org.apache.hadoop.yarn.ipc.YarnRPC - Creating YarnRPC for org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC
+ DEBUG main org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC - Creating a HadoopYarnProtoRpc proxy for protocol interface org.apache.hadoop.yarn.api.ApplicationClientProtocol
+ DEBUG main org.apache.hadoop.ipc.Client - getting client out of cache: org.apache.hadoop.ipc.Client@15e8fe2
+ DEBUG main org.apache.hadoop.service.AbstractService - Service org.apache.hadoop.yarn.client.api.impl.YarnClientImpl is started
+ DEBUG main org.apache.hadoop.service.AbstractService - Service org.apache.hadoop.mapred.ResourceMgrDelegate is started
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - PrivilegedAction as:tseg (auth:SIMPLE) from:org.apache.hadoop.fs.FileContext.getAbstractFileSystem(FileContext.java:331)
+ DEBUG main org.apache.hadoop.hdfs.BlockReaderLocal - dfs.client.use.legacy.blockreader.local = false
+ DEBUG main org.apache.hadoop.hdfs.BlockReaderLocal - dfs.client.read.shortcircuit = false
+ DEBUG main org.apache.hadoop.hdfs.BlockReaderLocal - dfs.client.domain.socket.data.traffic = false
+ DEBUG main org.apache.hadoop.hdfs.BlockReaderLocal - dfs.domain.socket.path = 
+ DEBUG main org.apache.hadoop.hdfs.DFSClient - No KeyProvider found.
+ DEBUG main org.apache.hadoop.io.retry.RetryUtils - multipleLinearRandomRetry = null
+ DEBUG main org.apache.hadoop.ipc.Client - getting client out of cache: org.apache.hadoop.ipc.Client@15e8fe2
+ DEBUG main org.apache.hadoop.hdfs.protocol.datatransfer.sasl.DataTransferSaslUtil - DataTransferProtocol not using SaslPropertiesResolver, no QOP found in configuration for dfs.data.transfer.protection
+ DEBUG main org.apache.hadoop.crypto.OpensslCipher - Failed to load OpenSSL Cipher.
+ java.lang.UnsatisfiedLinkError: org.apache.hadoop.util.NativeCodeLoader.buildSupportsOpenssl()Z
+	at org.apache.hadoop.util.NativeCodeLoader.buildSupportsOpenssl(Native Method)
+	at org.apache.hadoop.crypto.OpensslCipher.<clinit>(OpensslCipher.java:84)
+	at org.apache.hadoop.crypto.OpensslAesCtrCryptoCodec.<init>(OpensslAesCtrCryptoCodec.java:50)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:129)
+	at org.apache.hadoop.crypto.CryptoCodec.getInstance(CryptoCodec.java:67)
+	at org.apache.hadoop.crypto.CryptoCodec.getInstance(CryptoCodec.java:100)
+	at org.apache.hadoop.fs.Hdfs.<init>(Hdfs.java:91)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.fs.AbstractFileSystem.newInstance(AbstractFileSystem.java:129)
+	at org.apache.hadoop.fs.AbstractFileSystem.createFileSystem(AbstractFileSystem.java:157)
+	at org.apache.hadoop.fs.AbstractFileSystem.get(AbstractFileSystem.java:242)
+	at org.apache.hadoop.fs.FileContext$2.run(FileContext.java:334)
+	at org.apache.hadoop.fs.FileContext$2.run(FileContext.java:331)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.fs.FileContext.getAbstractFileSystem(FileContext.java:331)
+	at org.apache.hadoop.fs.FileContext.getFileContext(FileContext.java:448)
+	at org.apache.hadoop.fs.FileContext.getFileContext(FileContext.java:470)
+	at org.apache.hadoop.mapred.YARNRunner.<init>(YARNRunner.java:138)
+	at org.apache.hadoop.mapred.YARNRunner.<init>(YARNRunner.java:122)
+	at org.apache.hadoop.mapred.YARNRunner.<init>(YARNRunner.java:112)
+	at org.apache.hadoop.mapred.YarnClientProtocolProvider.create(YarnClientProtocolProvider.java:34)
+	at org.apache.hadoop.mapreduce.Cluster.initialize(Cluster.java:95)
+	at org.apache.hadoop.mapreduce.Cluster.<init>(Cluster.java:82)
+	at org.apache.hadoop.mapreduce.Cluster.<init>(Cluster.java:75)
+	at org.apache.hadoop.mapreduce.Job$9.run(Job.java:1266)
+	at org.apache.hadoop.mapreduce.Job$9.run(Job.java:1262)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.mapreduce.Job.connect(Job.java:1261)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1290)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1314)
+	at org.apache.sqoop.mapreduce.ImportJobBase.doSubmitJob(ImportJobBase.java:186)
+	at org.apache.sqoop.mapreduce.ImportJobBase.runJob(ImportJobBase.java:159)
+	at org.apache.sqoop.mapreduce.ImportJobBase.runImport(ImportJobBase.java:247)
+	at org.apache.sqoop.manager.SqlManager.importTable(SqlManager.java:665)
+	at org.apache.sqoop.manager.MySQLManager.importTable(MySQLManager.java:118)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:497)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:601)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at org.apache.sqoop.Sqoop.runTool(Sqoop.java:218)
+	at sqoop.UploadBySqoop.importSQLtoHDFS(UploadBySqoop.java:65)
+	at sqoop.UploadBySqoop.main(UploadBySqoop.java:26)
+DEBUG main org.apache.hadoop.util.PerformanceAdvisory - Crypto codec org.apache.hadoop.crypto.OpensslAesCtrCryptoCodec is not available.
+ DEBUG main org.apache.hadoop.util.PerformanceAdvisory - Using crypto codec org.apache.hadoop.crypto.JceAesCtrCryptoCodec.
+ DEBUG main org.apache.hadoop.mapreduce.Cluster - Picked org.apache.hadoop.mapred.YarnClientProtocolProvider as the ClientProtocolProvider
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - PrivilegedAction as:tseg (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Cluster.getFileSystem(Cluster.java:161)
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - PrivilegedAction as:tseg (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.submit(Job.java:1293)
+ DEBUG main org.apache.hadoop.ipc.Client - The ping interval is 60000 ms.
+ DEBUG main org.apache.hadoop.ipc.Client - Connecting to tseg0/10.103.240.17:9010
+ DEBUG IPC Client (28415896) connection to tseg0/10.103.240.17:9010 from tseg org.apache.hadoop.ipc.Client - IPC Client (28415896) connection to tseg0/10.103.240.17:9010 from tseg: starting, having connections 1
+ DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (28415896) connection to tseg0/10.103.240.17:9010 from tseg sending #0
+ DEBUG IPC Client (28415896) connection to tseg0/10.103.240.17:9010 from tseg org.apache.hadoop.ipc.Client - IPC Client (28415896) connection to tseg0/10.103.240.17:9010 from tseg got value #0
+ DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine - Call: getFileInfo took 78ms
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - PrivilegedActionException as:tseg (auth:SIMPLE) cause:org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory hdfs://tseg0:9010/user/tseg/saijinchen/sqoop20 already exists
+ DEBUG main org.apache.sqoop.util.ClassLoaderStack - Restoring classloader: sun.misc.Launcher$AppClassLoader@164dbd5
+ ERROR main org.apache.sqoop.tool.ImportTool - Encountered IOException running import job: org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory hdfs://tseg0:9010/user/tseg/saijinchen/sqoop20 already exists
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.checkOutputSpecs(FileOutputFormat.java:146)
+	at org.apache.hadoop.mapreduce.JobSubmitter.checkSpecs(JobSubmitter.java:562)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:432)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1296)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1293)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1293)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1314)
+	at org.apache.sqoop.mapreduce.ImportJobBase.doSubmitJob(ImportJobBase.java:186)
+	at org.apache.sqoop.mapreduce.ImportJobBase.runJob(ImportJobBase.java:159)
+	at org.apache.sqoop.mapreduce.ImportJobBase.runImport(ImportJobBase.java:247)
+	at org.apache.sqoop.manager.SqlManager.importTable(SqlManager.java:665)
+	at org.apache.sqoop.manager.MySQLManager.importTable(MySQLManager.java:118)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:497)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:601)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at org.apache.sqoop.Sqoop.runTool(Sqoop.java:218)
+	at sqoop.UploadBySqoop.importSQLtoHDFS(UploadBySqoop.java:65)
+	at sqoop.UploadBySqoop.main(UploadBySqoop.java:26)
+
+ DEBUG Thread-2 org.apache.hadoop.ipc.Client - stopping client from cache: org.apache.hadoop.ipc.Client@15e8fe2
+ WARN main org.apache.sqoop.tool.SqoopTool - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+ DEBUG main org.apache.sqoop.SqoopOptions - Generated nonce dir: \tmp\sqoop-tseg\compile\87ff27b839dd30d2696aac04040559ba
+ INFO main org.apache.sqoop.Sqoop - Running Sqoop version: 1.4.5
+ WARN main org.apache.sqoop.tool.BaseSqoopTool - Setting your password on the command-line is insecure. Consider using -P instead.
+ WARN main org.apache.sqoop.ConnFactory - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+ DEBUG main org.apache.sqoop.ConnFactory - Loaded manager factory: org.apache.sqoop.manager.oracle.OraOopManagerFactory
+ DEBUG main org.apache.sqoop.ConnFactory - Loaded manager factory: com.cloudera.sqoop.manager.DefaultManagerFactory
+ DEBUG main org.apache.sqoop.ConnFactory - Trying ManagerFactory: org.apache.sqoop.manager.oracle.OraOopManagerFactory
+ DEBUG main org.apache.sqoop.manager.oracle.OraOopManagerFactory - Data Connector for Oracle and Hadoop can be called by Sqoop!
+ DEBUG main org.apache.sqoop.ConnFactory - Trying ManagerFactory: com.cloudera.sqoop.manager.DefaultManagerFactory
+ DEBUG main org.apache.sqoop.manager.DefaultManagerFactory - Trying with scheme: jdbc:mysql:
+ INFO main org.apache.sqoop.manager.MySQLManager - Preparing to use a MySQL streaming resultset.
+ DEBUG main org.apache.sqoop.ConnFactory - Instantiated ConnManager org.apache.sqoop.manager.MySQLManager@d9fc12
+ INFO main org.apache.sqoop.tool.CodeGenTool - Beginning code generation
+ DEBUG main org.apache.sqoop.manager.SqlManager - Execute getColumnInfoRawQuery : SELECT t.* FROM `popedom_info` AS t LIMIT 1
+ DEBUG main org.apache.sqoop.manager.SqlManager - No connection paramenters specified. Using regular API for making connection.
+ DEBUG main org.apache.sqoop.manager.SqlManager - Using fetchSize for next query: -2147483648
+ INFO main org.apache.sqoop.manager.SqlManager - Executing SQL statement: SELECT t.* FROM `popedom_info` AS t LIMIT 1
+ DEBUG main org.apache.sqoop.orm.ClassWriter - selected columns:
+ DEBUG main org.apache.sqoop.orm.ClassWriter -   popedom_id
+ DEBUG main org.apache.sqoop.orm.ClassWriter -   popedom_name
+ DEBUG main org.apache.sqoop.orm.ClassWriter -   popedom_value
+ DEBUG main org.apache.sqoop.orm.ClassWriter -   category_id
+ DEBUG main org.apache.sqoop.orm.ClassWriter -   create_time
+ DEBUG main org.apache.sqoop.manager.SqlManager - Using fetchSize for next query: -2147483648
+ INFO main org.apache.sqoop.manager.SqlManager - Executing SQL statement: SELECT t.* FROM `popedom_info` AS t LIMIT 1
+ DEBUG main org.apache.sqoop.orm.ClassWriter - Writing source file: \tmp\sqoop-tseg\compile\87ff27b839dd30d2696aac04040559ba\popedom_info.java
+ DEBUG main org.apache.sqoop.orm.ClassWriter - Table name: popedom_info
+ DEBUG main org.apache.sqoop.orm.ClassWriter - Columns: popedom_id:4, popedom_name:12, popedom_value:12, category_id:4, create_time:12, 
+ DEBUG main org.apache.sqoop.orm.ClassWriter - sourceFilename is popedom_info.java
+ DEBUG main org.apache.sqoop.orm.CompilationManager - Found existing \tmp\sqoop-tseg\compile\87ff27b839dd30d2696aac04040559ba\
+ INFO main org.apache.sqoop.orm.CompilationManager - $HADOOP_MAPRED_HOME is not set
+ DEBUG main org.apache.sqoop.orm.CompilationManager - Current sqoop classpath = D:\workspace2\mysqoop\target\classes;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-client\2.6.0\hadoop-client-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-common\2.6.0\hadoop-common-2.6.0.jar;C:\Users\saisai\.m2\repository\com\google\guava\guava\11.0.2\guava-11.0.2.jar;C:\Users\saisai\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar;C:\Users\saisai\.m2\repository\org\apache\commons\commons-math3\3.1.1\commons-math3-3.1.1.jar;C:\Users\saisai\.m2\repository\xmlenc\xmlenc\0.52\xmlenc-0.52.jar;C:\Users\saisai\.m2\repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;C:\Users\saisai\.m2\repository\commons-codec\commons-codec\1.4\commons-codec-1.4.jar;C:\Users\saisai\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\saisai\.m2\repository\commons-net\commons-net\3.1\commons-net-3.1.jar;C:\Users\saisai\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\saisai\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;C:\Users\saisai\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\saisai\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\saisai\.m2\repository\commons-configuration\commons-configuration\1.6\commons-configuration-1.6.jar;C:\Users\saisai\.m2\repository\commons-digester\commons-digester\1.8\commons-digester-1.8.jar;C:\Users\saisai\.m2\repository\commons-beanutils\commons-beanutils\1.7.0\commons-beanutils-1.7.0.jar;C:\Users\saisai\.m2\repository\commons-beanutils\commons-beanutils-core\1.8.0\commons-beanutils-core-1.8.0.jar;C:\Users\saisai\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;C:\Users\saisai\.m2\repository\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar;C:\Users\saisai\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.9.13\jackson-core-asl-1.9.13.jar;C:\Users\saisai\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.9.13\jackson-mapper-asl-1.9.13.jar;C:\Users\saisai\.m2\repository\org\apache\avro\avro\1.7.4\avro-1.7.4.jar;C:\Users\saisai\.m2\repository\com\thoughtworks\paranamer\paranamer\2.3\paranamer-2.3.jar;C:\Users\saisai\.m2\repository\org\xerial\snappy\snappy-java\1.0.4.1\snappy-java-1.0.4.1.jar;C:\Users\saisai\.m2\repository\com\google\protobuf\protobuf-java\2.5.0\protobuf-java-2.5.0.jar;C:\Users\saisai\.m2\repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-auth\2.6.0\hadoop-auth-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\httpcomponents\httpclient\4.2.5\httpclient-4.2.5.jar;C:\Users\saisai\.m2\repository\org\apache\httpcomponents\httpcore\4.2.4\httpcore-4.2.4.jar;C:\Users\saisai\.m2\repository\org\apache\directory\server\apacheds-kerberos-codec\2.0.0-M15\apacheds-kerberos-codec-2.0.0-M15.jar;C:\Users\saisai\.m2\repository\org\apache\directory\server\apacheds-i18n\2.0.0-M15\apacheds-i18n-2.0.0-M15.jar;C:\Users\saisai\.m2\repository\org\apache\directory\api\api-asn1-api\1.0.0-M20\api-asn1-api-1.0.0-M20.jar;C:\Users\saisai\.m2\repository\org\apache\directory\api\api-util\1.0.0-M20\api-util-1.0.0-M20.jar;C:\Users\saisai\.m2\repository\org\apache\curator\curator-framework\2.6.0\curator-framework-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\curator\curator-client\2.6.0\curator-client-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\curator\curator-recipes\2.6.0\curator-recipes-2.6.0.jar;C:\Users\saisai\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\saisai\.m2\repository\org\htrace\htrace-core\3.0.4\htrace-core-3.0.4.jar;C:\Users\saisai\.m2\repository\org\apache\zookeeper\zookeeper\3.4.6\zookeeper-3.4.6.jar;C:\Users\saisai\.m2\repository\org\apache\commons\commons-compress\1.4.1\commons-compress-1.4.1.jar;C:\Users\saisai\.m2\repository\org\tukaani\xz\1.0\xz-1.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-hdfs\2.6.0\hadoop-hdfs-2.6.0.jar;C:\Users\saisai\.m2\repository\org\mortbay\jetty\jetty-util\6.1.26\jetty-util-6.1.26.jar;C:\Users\saisai\.m2\repository\io\netty\netty\3.6.2.Final\netty-3.6.2.Final.jar;C:\Users\saisai\.m2\repository\xerces\xercesImpl\2.9.1\xercesImpl-2.9.1.jar;C:\Users\saisai\.m2\repository\xml-apis\xml-apis\1.3.04\xml-apis-1.3.04.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-app\2.6.0\hadoop-mapreduce-client-app-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-common\2.6.0\hadoop-mapreduce-client-common-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-yarn-client\2.6.0\hadoop-yarn-client-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-yarn-server-common\2.6.0\hadoop-yarn-server-common-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-shuffle\2.6.0\hadoop-mapreduce-client-shuffle-2.6.0.jar;C:\Users\saisai\.m2\repository\org\fusesource\leveldbjni\leveldbjni-all\1.8\leveldbjni-all-1.8.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-yarn-api\2.6.0\hadoop-yarn-api-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-core\2.6.0\hadoop-mapreduce-client-core-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-yarn-common\2.6.0\hadoop-yarn-common-2.6.0.jar;C:\Users\saisai\.m2\repository\javax\xml\bind\jaxb-api\2.2.2\jaxb-api-2.2.2.jar;C:\Users\saisai\.m2\repository\javax\xml\stream\stax-api\1.0-2\stax-api-1.0-2.jar;C:\Users\saisai\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\saisai\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;C:\Users\saisai\.m2\repository\com\sun\jersey\jersey-core\1.9\jersey-core-1.9.jar;C:\Users\saisai\.m2\repository\com\sun\jersey\jersey-client\1.9\jersey-client-1.9.jar;C:\Users\saisai\.m2\repository\org\codehaus\jackson\jackson-jaxrs\1.9.13\jackson-jaxrs-1.9.13.jar;C:\Users\saisai\.m2\repository\org\codehaus\jackson\jackson-xc\1.9.13\jackson-xc-1.9.13.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-jobclient\2.6.0\hadoop-mapreduce-client-jobclient-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-annotations\2.6.0\hadoop-annotations-2.6.0.jar;C:\Users\saisai\.m2\repository\mysql\mysql-connector-java\5.1.35\mysql-connector-java-5.1.35.jar;C:\Users\saisai\.m2\repository\org\apache\sqoop\sqoop\1.4.5\sqoop-1.4.5.jar
+ DEBUG main org.apache.sqoop.orm.CompilationManager - Adding source file: \tmp\sqoop-tseg\compile\87ff27b839dd30d2696aac04040559ba\popedom_info.java
+ DEBUG main org.apache.sqoop.orm.CompilationManager - Invoking javac with args:
+ DEBUG main org.apache.sqoop.orm.CompilationManager -   -sourcepath
+ DEBUG main org.apache.sqoop.orm.CompilationManager -   \tmp\sqoop-tseg\compile\87ff27b839dd30d2696aac04040559ba\
+ DEBUG main org.apache.sqoop.orm.CompilationManager -   -d
+ DEBUG main org.apache.sqoop.orm.CompilationManager -   \tmp\sqoop-tseg\compile\87ff27b839dd30d2696aac04040559ba\
+ DEBUG main org.apache.sqoop.orm.CompilationManager -   -classpath
+ DEBUG main org.apache.sqoop.orm.CompilationManager -   D:\workspace2\mysqoop\target\classes;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-client\2.6.0\hadoop-client-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-common\2.6.0\hadoop-common-2.6.0.jar;C:\Users\saisai\.m2\repository\com\google\guava\guava\11.0.2\guava-11.0.2.jar;C:\Users\saisai\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar;C:\Users\saisai\.m2\repository\org\apache\commons\commons-math3\3.1.1\commons-math3-3.1.1.jar;C:\Users\saisai\.m2\repository\xmlenc\xmlenc\0.52\xmlenc-0.52.jar;C:\Users\saisai\.m2\repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;C:\Users\saisai\.m2\repository\commons-codec\commons-codec\1.4\commons-codec-1.4.jar;C:\Users\saisai\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\saisai\.m2\repository\commons-net\commons-net\3.1\commons-net-3.1.jar;C:\Users\saisai\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\saisai\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;C:\Users\saisai\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\saisai\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\saisai\.m2\repository\commons-configuration\commons-configuration\1.6\commons-configuration-1.6.jar;C:\Users\saisai\.m2\repository\commons-digester\commons-digester\1.8\commons-digester-1.8.jar;C:\Users\saisai\.m2\repository\commons-beanutils\commons-beanutils\1.7.0\commons-beanutils-1.7.0.jar;C:\Users\saisai\.m2\repository\commons-beanutils\commons-beanutils-core\1.8.0\commons-beanutils-core-1.8.0.jar;C:\Users\saisai\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;C:\Users\saisai\.m2\repository\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar;C:\Users\saisai\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.9.13\jackson-core-asl-1.9.13.jar;C:\Users\saisai\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.9.13\jackson-mapper-asl-1.9.13.jar;C:\Users\saisai\.m2\repository\org\apache\avro\avro\1.7.4\avro-1.7.4.jar;C:\Users\saisai\.m2\repository\com\thoughtworks\paranamer\paranamer\2.3\paranamer-2.3.jar;C:\Users\saisai\.m2\repository\org\xerial\snappy\snappy-java\1.0.4.1\snappy-java-1.0.4.1.jar;C:\Users\saisai\.m2\repository\com\google\protobuf\protobuf-java\2.5.0\protobuf-java-2.5.0.jar;C:\Users\saisai\.m2\repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-auth\2.6.0\hadoop-auth-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\httpcomponents\httpclient\4.2.5\httpclient-4.2.5.jar;C:\Users\saisai\.m2\repository\org\apache\httpcomponents\httpcore\4.2.4\httpcore-4.2.4.jar;C:\Users\saisai\.m2\repository\org\apache\directory\server\apacheds-kerberos-codec\2.0.0-M15\apacheds-kerberos-codec-2.0.0-M15.jar;C:\Users\saisai\.m2\repository\org\apache\directory\server\apacheds-i18n\2.0.0-M15\apacheds-i18n-2.0.0-M15.jar;C:\Users\saisai\.m2\repository\org\apache\directory\api\api-asn1-api\1.0.0-M20\api-asn1-api-1.0.0-M20.jar;C:\Users\saisai\.m2\repository\org\apache\directory\api\api-util\1.0.0-M20\api-util-1.0.0-M20.jar;C:\Users\saisai\.m2\repository\org\apache\curator\curator-framework\2.6.0\curator-framework-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\curator\curator-client\2.6.0\curator-client-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\curator\curator-recipes\2.6.0\curator-recipes-2.6.0.jar;C:\Users\saisai\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\saisai\.m2\repository\org\htrace\htrace-core\3.0.4\htrace-core-3.0.4.jar;C:\Users\saisai\.m2\repository\org\apache\zookeeper\zookeeper\3.4.6\zookeeper-3.4.6.jar;C:\Users\saisai\.m2\repository\org\apache\commons\commons-compress\1.4.1\commons-compress-1.4.1.jar;C:\Users\saisai\.m2\repository\org\tukaani\xz\1.0\xz-1.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-hdfs\2.6.0\hadoop-hdfs-2.6.0.jar;C:\Users\saisai\.m2\repository\org\mortbay\jetty\jetty-util\6.1.26\jetty-util-6.1.26.jar;C:\Users\saisai\.m2\repository\io\netty\netty\3.6.2.Final\netty-3.6.2.Final.jar;C:\Users\saisai\.m2\repository\xerces\xercesImpl\2.9.1\xercesImpl-2.9.1.jar;C:\Users\saisai\.m2\repository\xml-apis\xml-apis\1.3.04\xml-apis-1.3.04.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-app\2.6.0\hadoop-mapreduce-client-app-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-common\2.6.0\hadoop-mapreduce-client-common-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-yarn-client\2.6.0\hadoop-yarn-client-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-yarn-server-common\2.6.0\hadoop-yarn-server-common-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-shuffle\2.6.0\hadoop-mapreduce-client-shuffle-2.6.0.jar;C:\Users\saisai\.m2\repository\org\fusesource\leveldbjni\leveldbjni-all\1.8\leveldbjni-all-1.8.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-yarn-api\2.6.0\hadoop-yarn-api-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-core\2.6.0\hadoop-mapreduce-client-core-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-yarn-common\2.6.0\hadoop-yarn-common-2.6.0.jar;C:\Users\saisai\.m2\repository\javax\xml\bind\jaxb-api\2.2.2\jaxb-api-2.2.2.jar;C:\Users\saisai\.m2\repository\javax\xml\stream\stax-api\1.0-2\stax-api-1.0-2.jar;C:\Users\saisai\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\saisai\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;C:\Users\saisai\.m2\repository\com\sun\jersey\jersey-core\1.9\jersey-core-1.9.jar;C:\Users\saisai\.m2\repository\com\sun\jersey\jersey-client\1.9\jersey-client-1.9.jar;C:\Users\saisai\.m2\repository\org\codehaus\jackson\jackson-jaxrs\1.9.13\jackson-jaxrs-1.9.13.jar;C:\Users\saisai\.m2\repository\org\codehaus\jackson\jackson-xc\1.9.13\jackson-xc-1.9.13.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-jobclient\2.6.0\hadoop-mapreduce-client-jobclient-2.6.0.jar;C:\Users\saisai\.m2\repository\org\apache\hadoop\hadoop-annotations\2.6.0\hadoop-annotations-2.6.0.jar;C:\Users\saisai\.m2\repository\mysql\mysql-connector-java\5.1.35\mysql-connector-java-5.1.35.jar;C:\Users\saisai\.m2\repository\org\apache\sqoop\sqoop\1.4.5\sqoop-1.4.5.jar;/C:/Users/saisai/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.6.0/hadoop-mapreduce-client-core-2.6.0.jar;/C:/Users/saisai/.m2/repository/org/apache/sqoop/sqoop/1.4.5/sqoop-1.4.5.jar
+ DEBUG main org.apache.sqoop.orm.CompilationManager - Could not rename \tmp\sqoop-tseg\compile\87ff27b839dd30d2696aac04040559ba\popedom_info.java to D:\workspace2\mysqoop\.\popedom_info.java
+ INFO main org.apache.sqoop.orm.CompilationManager - Writing jar file: \tmp\sqoop-tseg\compile\87ff27b839dd30d2696aac04040559ba\popedom_info.jar
+ DEBUG main org.apache.sqoop.orm.CompilationManager - Scanning for .class files in directory: \tmp\sqoop-tseg\compile\87ff27b839dd30d2696aac04040559ba
+ DEBUG main org.apache.sqoop.orm.CompilationManager - Got classfile: \tmp\sqoop-tseg\compile\87ff27b839dd30d2696aac04040559ba\popedom_info.class -> popedom_info.class
+ DEBUG main org.apache.sqoop.orm.CompilationManager - Finished writing jar file \tmp\sqoop-tseg\compile\87ff27b839dd30d2696aac04040559ba\popedom_info.jar
+ WARN main org.apache.sqoop.manager.MySQLManager - It looks like you are importing from mysql.
+ WARN main org.apache.sqoop.manager.MySQLManager - This transfer can be faster! Use the --direct
+ WARN main org.apache.sqoop.manager.MySQLManager - option to exercise a MySQL-specific fast path.
+ INFO main org.apache.sqoop.manager.MySQLManager - Setting zero DATETIME behavior to convertToNull (mysql)
+ DEBUG main org.apache.sqoop.manager.MySQLManager - Rewriting connect string to jdbc:mysql://tseg0:3306/bcpdm_web?zeroDateTimeBehavior=convertToNull
+ DEBUG main org.apache.sqoop.manager.CatalogQueryManager - Retrieving primary key for table 'popedom_info' with query SELECT column_name FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = (SELECT SCHEMA()) AND TABLE_NAME = 'popedom_info' AND COLUMN_KEY = 'PRI'
+ DEBUG main org.apache.sqoop.manager.CatalogQueryManager - Retrieving primary key for table 'popedom_info' with query SELECT column_name FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = (SELECT SCHEMA()) AND TABLE_NAME = 'popedom_info' AND COLUMN_KEY = 'PRI'
+ INFO main org.apache.sqoop.mapreduce.ImportJobBase - Beginning import of popedom_info
+ DEBUG main org.apache.sqoop.util.ClassLoaderStack - Checking for existing class: popedom_info
+ DEBUG main org.apache.sqoop.util.ClassLoaderStack - Attempting to load jar through URL: jar:file:/D:/tmp/sqoop-tseg/compile/87ff27b839dd30d2696aac04040559ba/popedom_info.jar!/
+ DEBUG main org.apache.sqoop.util.ClassLoaderStack - Previous classloader is sun.misc.Launcher$AppClassLoader@ec6b00
+ DEBUG main org.apache.sqoop.util.ClassLoaderStack - Testing class in jar: popedom_info
+ DEBUG main org.apache.sqoop.util.ClassLoaderStack - Loaded jar into current JVM: jar:file:/D:/tmp/sqoop-tseg/compile/87ff27b839dd30d2696aac04040559ba/popedom_info.jar!/
+ DEBUG main org.apache.sqoop.util.ClassLoaderStack - Added classloader for jar \tmp\sqoop-tseg\compile\87ff27b839dd30d2696aac04040559ba\popedom_info.jar: java.net.FactoryURLClassLoader@b96d9e
+ DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(value=[Rate of successful kerberos logins and latency (milliseconds)], about=, valueName=Time, type=DEFAULT, always=false, sampleName=Ops)
+ DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(value=[Rate of failed kerberos logins and latency (milliseconds)], about=, valueName=Time, type=DEFAULT, always=false, sampleName=Ops)
+ DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(value=[GetGroups], about=, valueName=Time, type=DEFAULT, always=false, sampleName=Ops)
+ DEBUG main org.apache.hadoop.metrics2.impl.MetricsSystemImpl - UgiMetrics, User and group related metrics
+ DEBUG main org.apache.hadoop.security.authentication.util.KerberosName - Kerberos krb5 configuration not found, setting default realm to empty
+ DEBUG main org.apache.hadoop.security.Groups -  Creating new Groups object
+ DEBUG main org.apache.hadoop.util.NativeCodeLoader - Trying to load the custom-built native-hadoop library...
+ DEBUG main org.apache.hadoop.util.NativeCodeLoader - Loaded the native-hadoop library
+ DEBUG main org.apache.hadoop.security.JniBasedUnixGroupsMapping - Using JniBasedUnixGroupsMapping for Group resolution
+ DEBUG main org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback - Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMapping
+ DEBUG main org.apache.hadoop.security.Groups - Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - hadoop login
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - hadoop login commit
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - using local user:NTUserPrincipal: tseg
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - Using user: "NTUserPrincipal: tseg" with name tseg
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - User entry: "tseg"
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - UGI loginUser:tseg (auth:SIMPLE)
+ INFO main org.apache.hadoop.conf.Configuration.deprecation - mapred.jar is deprecated. Instead, use mapreduce.job.jar
+ DEBUG main org.apache.sqoop.mapreduce.db.DBConfiguration - Securing password into job credentials store
+ DEBUG main org.apache.sqoop.mapreduce.DataDrivenImportJob - Using table class: popedom_info
+ DEBUG main org.apache.sqoop.mapreduce.DataDrivenImportJob - Using InputFormat: class com.cloudera.sqoop.mapreduce.db.DataDrivenDBInputFormat
+ DEBUG main org.apache.hadoop.hdfs.BlockReaderLocal - dfs.client.use.legacy.blockreader.local = false
+ DEBUG main org.apache.hadoop.hdfs.BlockReaderLocal - dfs.client.read.shortcircuit = false
+ DEBUG main org.apache.hadoop.hdfs.BlockReaderLocal - dfs.client.domain.socket.data.traffic = false
+ DEBUG main org.apache.hadoop.hdfs.BlockReaderLocal - dfs.domain.socket.path = 
+ DEBUG main org.apache.hadoop.hdfs.DFSClient - No KeyProvider found.
+ DEBUG main org.apache.hadoop.io.retry.RetryUtils - multipleLinearRandomRetry = null
+ DEBUG main org.apache.hadoop.ipc.Server - rpcKind=RPC_PROTOCOL_BUFFER, rpcRequestWrapperClass=class org.apache.hadoop.ipc.ProtobufRpcEngine$RpcRequestWrapper, rpcInvoker=org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker@765b39
+ DEBUG main org.apache.hadoop.ipc.Client - getting client out of cache: org.apache.hadoop.ipc.Client@1592e2c
+ DEBUG main org.apache.hadoop.util.PerformanceAdvisory - Both short-circuit local reads and UNIX domain socket are disabled.
+ DEBUG main org.apache.hadoop.hdfs.protocol.datatransfer.sasl.DataTransferSaslUtil - DataTransferProtocol not using SaslPropertiesResolver, no QOP found in configuration for dfs.data.transfer.protection
+ INFO main org.apache.hadoop.conf.Configuration.deprecation - mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+ DEBUG main org.apache.sqoop.mapreduce.JobBase - Adding to job classpath: file:/C:/Users/saisai/.m2/repository/org/apache/sqoop/sqoop/1.4.5/sqoop-1.4.5.jar
+ DEBUG main org.apache.sqoop.mapreduce.JobBase - Adding to job classpath: file:/C:/Users/saisai/.m2/repository/mysql/mysql-connector-java/5.1.35/mysql-connector-java-5.1.35.jar
+ DEBUG main org.apache.sqoop.mapreduce.JobBase - Adding to job classpath: file:/C:/Users/saisai/.m2/repository/org/apache/sqoop/sqoop/1.4.5/sqoop-1.4.5.jar
+ DEBUG main org.apache.sqoop.mapreduce.JobBase - Adding to job classpath: file:/C:/Users/saisai/.m2/repository/org/apache/sqoop/sqoop/1.4.5/sqoop-1.4.5.jar
+ WARN main org.apache.sqoop.mapreduce.JobBase - SQOOP_HOME is unset. May not be able to find all job dependencies.
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - PrivilegedAction as:tseg (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.connect(Job.java:1261)
+ DEBUG main org.apache.hadoop.mapreduce.Cluster - Trying ClientProtocolProvider : org.apache.hadoop.mapred.LocalClientProtocolProvider
+ DEBUG main org.apache.hadoop.mapreduce.Cluster - Cannot pick org.apache.hadoop.mapred.LocalClientProtocolProvider as the ClientProtocolProvider - returned null protocol
+ DEBUG main org.apache.hadoop.mapreduce.Cluster - Trying ClientProtocolProvider : org.apache.hadoop.mapred.YarnClientProtocolProvider
+ DEBUG main org.apache.hadoop.service.AbstractService - Service: org.apache.hadoop.mapred.ResourceMgrDelegate entered state INITED
+ DEBUG main org.apache.hadoop.service.AbstractService - Service: org.apache.hadoop.yarn.client.api.impl.YarnClientImpl entered state INITED
+ INFO main org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at tseg0/10.103.240.17:8032
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - PrivilegedAction as:tseg (auth:SIMPLE) from:org.apache.hadoop.yarn.client.RMProxy.getProxy(RMProxy.java:136)
+ DEBUG main org.apache.hadoop.yarn.ipc.YarnRPC - Creating YarnRPC for org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC
+ DEBUG main org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC - Creating a HadoopYarnProtoRpc proxy for protocol interface org.apache.hadoop.yarn.api.ApplicationClientProtocol
+ DEBUG main org.apache.hadoop.ipc.Client - getting client out of cache: org.apache.hadoop.ipc.Client@1592e2c
+ DEBUG main org.apache.hadoop.service.AbstractService - Service org.apache.hadoop.yarn.client.api.impl.YarnClientImpl is started
+ DEBUG main org.apache.hadoop.service.AbstractService - Service org.apache.hadoop.mapred.ResourceMgrDelegate is started
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - PrivilegedAction as:tseg (auth:SIMPLE) from:org.apache.hadoop.fs.FileContext.getAbstractFileSystem(FileContext.java:331)
+ DEBUG main org.apache.hadoop.hdfs.BlockReaderLocal - dfs.client.use.legacy.blockreader.local = false
+ DEBUG main org.apache.hadoop.hdfs.BlockReaderLocal - dfs.client.read.shortcircuit = false
+ DEBUG main org.apache.hadoop.hdfs.BlockReaderLocal - dfs.client.domain.socket.data.traffic = false
+ DEBUG main org.apache.hadoop.hdfs.BlockReaderLocal - dfs.domain.socket.path = 
+ DEBUG main org.apache.hadoop.hdfs.DFSClient - No KeyProvider found.
+ DEBUG main org.apache.hadoop.io.retry.RetryUtils - multipleLinearRandomRetry = null
+ DEBUG main org.apache.hadoop.ipc.Client - getting client out of cache: org.apache.hadoop.ipc.Client@1592e2c
+ DEBUG main org.apache.hadoop.hdfs.protocol.datatransfer.sasl.DataTransferSaslUtil - DataTransferProtocol not using SaslPropertiesResolver, no QOP found in configuration for dfs.data.transfer.protection
+ DEBUG main org.apache.hadoop.crypto.OpensslCipher - Failed to load OpenSSL Cipher.
+ java.lang.UnsatisfiedLinkError: org.apache.hadoop.util.NativeCodeLoader.buildSupportsOpenssl()Z
+	at org.apache.hadoop.util.NativeCodeLoader.buildSupportsOpenssl(Native Method)
+	at org.apache.hadoop.crypto.OpensslCipher.<clinit>(OpensslCipher.java:84)
+	at org.apache.hadoop.crypto.OpensslAesCtrCryptoCodec.<init>(OpensslAesCtrCryptoCodec.java:50)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:129)
+	at org.apache.hadoop.crypto.CryptoCodec.getInstance(CryptoCodec.java:67)
+	at org.apache.hadoop.crypto.CryptoCodec.getInstance(CryptoCodec.java:100)
+	at org.apache.hadoop.fs.Hdfs.<init>(Hdfs.java:91)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.fs.AbstractFileSystem.newInstance(AbstractFileSystem.java:129)
+	at org.apache.hadoop.fs.AbstractFileSystem.createFileSystem(AbstractFileSystem.java:157)
+	at org.apache.hadoop.fs.AbstractFileSystem.get(AbstractFileSystem.java:242)
+	at org.apache.hadoop.fs.FileContext$2.run(FileContext.java:334)
+	at org.apache.hadoop.fs.FileContext$2.run(FileContext.java:331)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.fs.FileContext.getAbstractFileSystem(FileContext.java:331)
+	at org.apache.hadoop.fs.FileContext.getFileContext(FileContext.java:448)
+	at org.apache.hadoop.fs.FileContext.getFileContext(FileContext.java:470)
+	at org.apache.hadoop.mapred.YARNRunner.<init>(YARNRunner.java:138)
+	at org.apache.hadoop.mapred.YARNRunner.<init>(YARNRunner.java:122)
+	at org.apache.hadoop.mapred.YARNRunner.<init>(YARNRunner.java:112)
+	at org.apache.hadoop.mapred.YarnClientProtocolProvider.create(YarnClientProtocolProvider.java:34)
+	at org.apache.hadoop.mapreduce.Cluster.initialize(Cluster.java:95)
+	at org.apache.hadoop.mapreduce.Cluster.<init>(Cluster.java:82)
+	at org.apache.hadoop.mapreduce.Cluster.<init>(Cluster.java:75)
+	at org.apache.hadoop.mapreduce.Job$9.run(Job.java:1266)
+	at org.apache.hadoop.mapreduce.Job$9.run(Job.java:1262)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.mapreduce.Job.connect(Job.java:1261)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1290)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1314)
+	at org.apache.sqoop.mapreduce.ImportJobBase.doSubmitJob(ImportJobBase.java:186)
+	at org.apache.sqoop.mapreduce.ImportJobBase.runJob(ImportJobBase.java:159)
+	at org.apache.sqoop.mapreduce.ImportJobBase.runImport(ImportJobBase.java:247)
+	at org.apache.sqoop.manager.SqlManager.importTable(SqlManager.java:665)
+	at org.apache.sqoop.manager.MySQLManager.importTable(MySQLManager.java:118)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:497)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:601)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at org.apache.sqoop.Sqoop.runTool(Sqoop.java:218)
+	at sqoop.UploadBySqoop.importSQLtoHDFS(UploadBySqoop.java:65)
+	at sqoop.UploadBySqoop.main(UploadBySqoop.java:26)
+DEBUG main org.apache.hadoop.util.PerformanceAdvisory - Crypto codec org.apache.hadoop.crypto.OpensslAesCtrCryptoCodec is not available.
+ DEBUG main org.apache.hadoop.util.PerformanceAdvisory - Using crypto codec org.apache.hadoop.crypto.JceAesCtrCryptoCodec.
+ DEBUG main org.apache.hadoop.mapreduce.Cluster - Picked org.apache.hadoop.mapred.YarnClientProtocolProvider as the ClientProtocolProvider
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - PrivilegedAction as:tseg (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Cluster.getFileSystem(Cluster.java:161)
+ DEBUG main org.apache.hadoop.security.UserGroupInformation - PrivilegedAction as:tseg (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.submit(Job.java:1293)
+ DEBUG main org.apache.hadoop.ipc.Client - The ping interval is 60000 ms.
+ DEBUG main org.apache.hadoop.ipc.Client - Connecting to tseg0/10.103.240.17:9010
+ DEBUG IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg: starting, having connections 1
+ DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg sending #0
+ DEBUG IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg got value #0
+ DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine - Call: getFileInfo took 47ms
+ DEBUG main org.apache.hadoop.mapred.ResourceMgrDelegate - getStagingAreaDir: dir=/tmp/hadoop-yarn/staging/tseg/.staging
+ DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg sending #1
+ DEBUG IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg got value #1
+ DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine - Call: getFileInfo took 0ms
+ DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg sending #2
+ DEBUG IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg got value #2
+ DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine - Call: getFileInfo took 0ms
+ DEBUG main org.apache.hadoop.ipc.Client - The ping interval is 60000 ms.
+ DEBUG main org.apache.hadoop.ipc.Client - Connecting to tseg0/10.103.240.17:8032
+ DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:8032 from tseg sending #3
+ DEBUG IPC Client (28396001) connection to tseg0/10.103.240.17:8032 from tseg org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:8032 from tseg: starting, having connections 2
+ DEBUG IPC Client (28396001) connection to tseg0/10.103.240.17:8032 from tseg org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:8032 from tseg got value #3
+ DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine - Call: getNewApplication took 0ms
+ DEBUG main org.apache.hadoop.mapreduce.JobSubmitter - Configuring job job_1433857649350_0906 with /tmp/hadoop-yarn/staging/tseg/.staging/job_1433857649350_0906 as the submit dir
+ DEBUG main org.apache.hadoop.mapreduce.JobSubmitter - adding the following namenodes' delegation tokens:[hdfs://tseg0:9010]
+ DEBUG main org.apache.hadoop.mapreduce.JobSubmitter - default FileSystem: hdfs://tseg0:9010
+ DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg sending #4
+ DEBUG IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg got value #4
+ DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine - Call: getFileInfo took 9ms
+ DEBUG main org.apache.hadoop.hdfs.DFSClient - /tmp/hadoop-yarn/staging/tseg/.staging/job_1433857649350_0906: masked=rwxr-xr-x
+ DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg sending #5
+ DEBUG IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg got value #5
+ DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine - Call: mkdirs took 0ms
+ DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg sending #6
+ DEBUG IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg got value #6
+ DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine - Call: setPermission took 0ms
+ DEBUG main org.apache.hadoop.hdfs.DFSClient - /tmp/hadoop-yarn/staging/tseg/.staging/job_1433857649350_0906/libjars: masked=rwxr-xr-x
+ DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg sending #7
+ DEBUG IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg got value #7
+ DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine - Call: mkdirs took 0ms
+ DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg sending #8
+ DEBUG IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg got value #8
+ DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine - Call: setPermission took 0ms
+ DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg sending #9
+ DEBUG IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg got value #9
+ DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine - Call: getFileInfo took 0ms
+ DEBUG main org.apache.hadoop.hdfs.DFSClient - /tmp/hadoop-yarn/staging/tseg/.staging/job_1433857649350_0906/libjars/sqoop-1.4.5.jar: masked=rw-r--r--
+ DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg sending #10
+ DEBUG IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg got value #10
+ DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine - Call: create took 0ms
+ DEBUG main org.apache.hadoop.hdfs.DFSClient - computePacketChunkSize: src=/tmp/hadoop-yarn/staging/tseg/.staging/job_1433857649350_0906/libjars/sqoop-1.4.5.jar, chunkSize=516, chunksPerPacket=127, packetSize=65532
+ DEBUG LeaseRenewer:tseg@tseg0:9010 org.apache.hadoop.hdfs.LeaseRenewer - Lease renewer daemon for [DFSClient_NONMAPREDUCE_78994593_1] with renew id 1 started
+ INFO main org.apache.hadoop.mapreduce.JobSubmitter - Cleaning up the staging area /tmp/hadoop-yarn/staging/tseg/.staging/job_1433857649350_0906
+ DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg sending #11
+ DEBUG IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg org.apache.hadoop.ipc.Client - IPC Client (28396001) connection to tseg0/10.103.240.17:9010 from tseg got value #11
+ DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine - Call: delete took 0ms
+ DEBUG main org.apache.sqoop.util.ClassLoaderStack - Restoring classloader: sun.misc.Launcher$AppClassLoader@ec6b00
+ DEBUG Thread-2 org.apache.hadoop.ipc.Client - stopping client from cache: org.apache.hadoop.ipc.Client@1592e2c
+ WARN main org.apache.sqoop.tool.SqoopTool - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+ DEBUG main org.apache.sqoop.SqoopOptions - Generated nonce dir: \tmp\sqoop-tseg\compile\39d99e8121fdc2eb6f9c61424fe6b70c
+ INFO main org.apache.sqoop.Sqoop - Running Sqoop version: 1.4.5
+ WARN main org.apache.sqoop.tool.BaseSqoopTool - Setting your password on the command-line is insecure. Consider using -P instead.
+ WARN main org.apache.sqoop.ConnFactory - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+ DEBUG main org.apache.sqoop.ConnFactory - Loaded manager factory: org.apache.sqoop.manager.oracle.OraOopManagerFactory
+ DEBUG main org.apache.sqoop.ConnFactory - Loaded manager factory: com.cloudera.sqoop.manager.DefaultManagerFactory
+ DEBUG main org.apache.sqoop.ConnFactory - Trying ManagerFactory: org.apache.sqoop.manager.oracle.OraOopManagerFactory
+ DEBUG main org.apache.sqoop.manager.oracle.OraOopManagerFactory - Data Connector for Oracle and Hadoop can be called by Sqoop!
+ DEBUG main org.apache.sqoop.ConnFactory - Trying ManagerFactory: com.cloudera.sqoop.manager.DefaultManagerFactory
+ DEBUG main org.apache.sqoop.manager.DefaultManagerFactory - Trying with scheme: jdbc:mysql:
+ INFO main org.apache.sqoop.manager.MySQLManager - Preparing to use a MySQL streaming resultset.
+ DEBUG main org.apache.sqoop.ConnFactory - Instantiated ConnManager org.apache.sqoop.manager.MySQLManager@1d65cd0
+ INFO main org.apache.sqoop.tool.CodeGenTool - Beginning code generation
+ DEBUG main org.apache.sqoop.manager.SqlManager - Execute getColumnInfoRawQuery : SELECT t.* FROM `company_info_test1` AS t LIMIT 1
+ DEBUG main org.apache.sqoop.manager.SqlManager - No connection paramenters specified. Using regular API for making connection.
+ DEBUG main org.apache.sqoop.manager.SqlManager - Using fetchSize for next query: -2147483648
+ INFO main org.apache.sqoop.manager.SqlManager - Executing SQL statement: SELECT t.* FROM `company_info_test1` AS t LIMIT 1
+ DEBUG main org.apache.sqoop.orm.ClassWriter - selected columns:
+ DEBUG main org.apache.sqoop.orm.ClassWriter -   company_id
+ DEBUG main org.apache.sqoop.orm.ClassWriter -   company_name
+ DEBUG main org.apache.sqoop.orm.ClassWriter -   company_description
+ DEBUG main org.apache.sqoop.manager.SqlManager - Using fetchSize for next query: -2147483648
+ INFO main org.apache.sqoop.manager.SqlManager - Executing SQL statement: SELECT t.* FROM `company_info_test1` AS t LIMIT 1
+ DEBUG main org.apache.sqoop.orm.ClassWriter - Writing source file: \tmp\sqoop-tseg\compile\39d99e8121fdc2eb6f9c61424fe6b70c\company_info_test1.java
+ DEBUG main org.apache.sqoop.orm.ClassWriter - Table name: company_info_test1
+ DEBUG main org.apache.sqoop.orm.ClassWriter - Columns: company_id:-5, company_name:12, company_description:12, 
+ DEBUG main org.apache.sqoop.orm.ClassWriter - sourceFilename is company_info_test1.java
+ DEBUG main org.apache.sqoop.orm.CompilationManager - Found existing \tmp\sqoop-tseg\compile\39d99e8121fdc2eb6f9c61424fe6b70c\
+ INFO main org.apache.sqoop.orm.CompilationManager - HADOOP_MAPRED_HOME is D:\home\tseg\hadoop-2.6.0
+ ERROR main org.apache.sqoop.Sqoop - Got exception running Sqoop: java.lang.IllegalArgumentException: Parameter 'directory' is not a directory
+ 
